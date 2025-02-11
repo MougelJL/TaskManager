@@ -1,0 +1,3 @@
+#ignore the python venv ./env files
+*env/
+*stuff/
