@@ -1,3 +1,5 @@
 #ignore the python venv ./env files
 *env/
-*stuff/
+*a-stuff/
+src/task_tree.py
+*src/__pycache__
