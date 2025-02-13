@@ -1,5 +1,5 @@
 import datetime
-from task_status import TaskStatus
+from .task_status import TaskStatus
 
 class Task:
     def __init__(self, name: str = None, status = TaskStatus.TO_DO) -> None:
