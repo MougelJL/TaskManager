@@ -1,7 +1,7 @@
-import argparse
+#import argparse
 import os
 
-class CLI ():
+class Cli ():
 
     def __init__(self):
         self.cwd = os.getcwd() #Current Working Directory
@@ -11,9 +11,15 @@ class CLI ():
         self.history_file = ...
 
     def add_task (self, task_name:str) -> None:
+        """Creates and adds a new Task Object to a to an already existing Tasklist Object
+        """
         pass
 
-    def delete_task (self, task_id: int) -> None:
+    def delete_task (self, task_id: int = None, task_name: str = None) -> None:
+        """Removes a task from a Tasklist Object using either their name or ID
+
+        task_id (integer)
+        """
         pass
     
     def list_tasks (self, status: str) -> str:
