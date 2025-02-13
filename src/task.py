@@ -5,17 +5,24 @@ class Task:
     def __init__(self, name: str = None, status = TaskStatus.TO_DO) -> None:
                  
         #Data and meta
+        self.Id: int = None
         self.name: str = name
         self.status: TaskStatus = status       
         self.creation_date: datetime.date = ...
         self.update_date: datetime.date = ...
         
     def __str__(self):
-        return f'Name: {self.name}\nStatus: {self.status.value}'
-
-    
+        return f'Name: {self.name}\nStatus: {self.status.value}'    
 
     #Getters and setters
+    @property
+    def Id(self) -> int:
+        return self._Id
+    
+    @Id.setter
+    def Id(self, value:int) -> None:
+        self._Id = value
+
     @property
     def name(self) -> str:
         return self._name
