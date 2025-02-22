@@ -2,4 +2,4 @@
 *env/
 *a-stuff/
 src/task_tree.py
-*src/__pycache__
+*src/__pycache__/
